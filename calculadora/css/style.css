@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+body{
+    background-color: #a0d1c8;
+}
+
+.linha{
+    grid-column: 1/5;
+    text-align: end;
+    padding-right: 5px;
+    grid-row: 2/2;
+    height: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.linha > span{
+    border: 1px solid #f1b20e;
+    width: 65px;
+}
+#calc{
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1px 1fr 1fr 1fr 1fr 1fr;
+    width: 350px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px; 
+    background-color: #2d2f2f;
+    box-shadow: 0px 0px 8px 2px #343838;
+}
+
+.output{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: end;
+    grid-column: 1/5;
+    background-color: #2d2f2f;
+    font-size: 50px;
+    color: #eeeeee;
+    background-color: transparent;
+
+    
+    
+}
+#calc > button{
+    
+    color: #eeeeee;
+    font-size: 18px;
+    border:none;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 15px;
+}
+#calc > button:hover{
+    background-color: #252727;
+    transition: 0.5s;
+    
+}
+
+#calc > .btn-color{
+    color: #f1b20e;
+}
+#calc > .number-0{
+    grid-column: 1/3;
+}
