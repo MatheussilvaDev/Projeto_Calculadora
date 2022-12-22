@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,31 +8,33 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Calculadora</title>
 </head>
+
 <body>
     <div id="calc">
-        <div class="output" ></div>
+        <div class="output"></div>
         <div class="linha"><span></span></div>
         <button>AC</button>
-        <button>+/-</button>
+        <button onclick="maisOuMenos()">+/-</button>
         <button id="del" onmousedown="del()">DEL</button>
-        <button id="div">/</button>
-        <button data-number id="number1" onclick="conta('1')">1</button>
-        <button data-number id="number" onclick="conta('2')">2</button>
-        <button data-number id="number" onclick="conta('3')">3</button>
-        <button id="mult">*</button>
-        <button data-number id="number" onclick="conta('4')">4</button>
-        <button data-number id="number" onclick="conta('5')">5</button>
-        <button data-number id="number" onclick="conta('6')">6</button>
+        <button id="div" onclick="validaOperador('÷')">÷</button>
+        <button id="number1" onclick="conta('1')">1</button>
+        <button id="number" onclick="conta('2')">2</button>
+        <button id="number" onclick="conta('3')">3</button>
+        <button id="mult" onclick="validaOperador('*')">*</button>
+        <button id="number" onclick="conta('4')">4</button>
+        <button id="number" onclick="conta('5')">5</button>
+        <button id="number" onclick="conta('6')">6</button>
         <button id="add" onclick="validaOperador('+')">+</button>
-        <button data-number id="number" onclick="conta('7')">7</button>
-        <button data-number id="number" onclick="conta('8')">8</button>
-        <button data-number id="number" onclick="conta('9')">9</button>
-        <button id="sub">-</button>
-        <button data-number class="number number-0"  onclick="operation('0')">0</button>
+        <button id="number" onclick="conta('7')">7</button>
+        <button id="number" onclick="conta('8')">8</button>
+        <button id="number" onclick="conta('9')">9</button>
+        <button id="sub" onclick="validaOperador('-')">-</button>
+        <button class="number number-0" onclick="conta('0')">0</button>
         <button>.</button>
-     
-        <button class="btn-color" onclick="equal()">=</button>
+
+        <button class="btn-color" onclick="validaEquacao()">=</button>
     </div>
     <script src="js/main.js"></script>
 </body>
+
 </html>
