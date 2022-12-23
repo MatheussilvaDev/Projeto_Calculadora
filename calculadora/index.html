@@ -13,7 +13,7 @@
     <div id="calc">
         <div class="output"></div>
         <div class="linha"><span></span></div>
-        <button>AC</button>
+        <button onclick="AC()">AC</button>
         <button onclick="maisOuMenos()">+/-</button>
         <button id="del" onmousedown="del()">DEL</button>
         <button id="div" onclick="validaOperador('÷')">÷</button>
@@ -30,7 +30,7 @@
         <button id="number" onclick="conta('9')">9</button>
         <button id="sub" onclick="validaOperador('-')">-</button>
         <button class="number number-0" onclick="conta('0')">0</button>
-        <button>.</button>
+        <button onclick="conta('.')">.</button>
 
         <button class="btn-color" onclick="validaEquacao()">=</button>
     </div>
